@@ -5,8 +5,8 @@
    "keywords" : ["led", "arduino", "esp32", "non-blocking"],
    "authors" : [
     {
-        "name" : "Felipe de Oliveira Costa",
-        "email": "felipesof17082008@gmail.com"
+        "name" : "Felipe de Oliveira Costa ",
+        "email": "felipesof17082008@gmail.com "
     }
    ],
    "license" : "MIT",
