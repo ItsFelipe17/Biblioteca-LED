@@ -15,16 +15,17 @@ Led ledA(18);
 
 void setup()
 {
-
-}
-
-void loop()
-{
 /**
  * Ao mandar o led piscar, dentro do parênteses coloco 1 como frequência e 10 como número de repetições.
  * Após piscar, ele vai ficar ligado pra sempre, até vc pressionar o botão reset.
  */
 ledA.piscar(1, 10);
 ledA.ligar();
+
+}
+
+void loop()
+{
+
 ledA.update(); //update() É OBRIGATÓRIO uso do update no loop, para funcionar o sistema.    
 }

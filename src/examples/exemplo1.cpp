@@ -41,8 +41,5 @@ if(estadoAtualBotaoA && !estadoAnteriorBotaoA)
 ledA.ligar(2000);
   estadoAnteriorBotaoA = estadoAtualBotaoA;
 
-/**
- * update() É OBRIGATÓRIO uso do update no loop, para funcionar o sistema 
- */  
-ledA.update();
+ledA.update();//update() É OBRIGATÓRIO uso do update no loop, para funcionar o sistema 
 }

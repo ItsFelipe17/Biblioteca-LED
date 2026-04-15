@@ -12,6 +12,7 @@ Versão: 1.0
  * @brief Nome dado ao dispositivo de saída.
  */
 Led ledA(18);
+uint8_t pinBotaoA= 0;
 
 void setup()
 {
@@ -20,7 +21,6 @@ void setup()
 
 void loop()
 {
-LedA.ligar(); //Vai ligar o Led. 
 static bool estadoAnteriorBotaoA;
 /**
  * Colocamos em loop a leitura do estado atual do botão.
@@ -33,7 +33,7 @@ bool estadoAtualBotaoA = digitalRead(pinBotaoA);
 if(!estadoAtualBotaoA && estadoAnteriorBotaoA)
 
 /**
- * Após pressionar o botão o Led começará a alternar entre, ligar e desligar.
+ * Após pressionar o botão o estado dele vai alterar, ligar e desligar.
  */
 ledA.alternar();
   estadoAnteriorBotaoA = estadoAtualBotaoA;

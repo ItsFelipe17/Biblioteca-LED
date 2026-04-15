@@ -12,17 +12,16 @@ Versão: 1.0
  * @brief Nome dado ao dispositivo de saída.
  */
 Led ledA(18);
-Led ledA(15);
+Led ledB(15);
 void setup()
 {
-
+ledA.piscar(30);//Ao mandar o ledA piscar, dentro do parênteses coloco 30 como frequência, equivalente a 30 hertz.
+ledB.piscar(2,15);//Ao mandar o ledB piscar, dentro do parênteses coloco 2 como frequência e 15 repetições.
 }
 
 void loop()
 {
-ledA.piscar(30);//Ao mandar o ledA piscar, dentro do parênteses coloco 30 como frequência, equivalente a 30 hertz.
-ledB.piscar(20,50;)//Ao mandar o ledB piscar, dentro do parênteses coloco 30 como frequência e 50 repetições.
-LedB.ligar()//Então após as 50 repetições, o ledB vai ficar ligado.
+
 ledA.update();//update() É OBRIGATÓRIO uso do update no loop, para funcionar o sistema.    
 ledB.update();//update() É OBRIGATÓRIO uso do update no loop, para funcionar o sistema.    
 }

@@ -15,14 +15,14 @@ Led ledA(18);
     
 void setup()
 {
-
-}
-
-void loop()
-{
 /**
  *Ao mandar o led piscar, dentro do parênteses coloco 2 como frequência e 10 como número de repetições.
  */
 ledA.piscar(2,10);
+}
+
+void loop()
+{
+
 ledA.update();//update() É OBRIGATÓRIO uso do update no loop, para funcionar o sistema. 
 }
